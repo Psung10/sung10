@@ -1,12 +1,19 @@
-
 apiVersion: argoproj.io/v1alpha1
-kind: AppProject
+kind: Application
 metadata:
-  name: default
-  namespace: argocd
+  name: test-jisung
 spec:
-  destinations:
-    - namespace: default
-      server: https://kubernetes.default.svc
-  sourceRepos:
-    - '*'
+  destination:
+    name: ''
+    namespace: default
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: k8s
+    repoURL: 'https://github.com/Psung10/sung10.git'
+    targetRevision: main
+  sources: []
+  project: default
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false

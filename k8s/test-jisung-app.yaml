@@ -4,12 +4,11 @@ metadata:
   name: test-jisung
 spec:
   destination:
-    name: ''
-    namespace:hitachi-pj-hcsgenai2-usermanaged
-    server:'https://kubernetes.default.svc'
+    namespace: hitachi-pj-hcsgenai2-usermanaged
+    server: https://kubernetes.default.svc
   source:
     path: k8s
-    repoURL: 'https://github.com/Psung10/sung10.git'
+    repoURL: https://github.com/Psung10/sung10.git
     targetRevision: main
   project: default
   syncPolicy:

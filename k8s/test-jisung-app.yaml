@@ -5,7 +5,7 @@ metadata:
 spec:
   destination:
     name: ''
-    namespace: hitachi-pj-hcsgenai2-usermanaged
+    namespace:hitachi-pj-hcsgenai2-usermanaged
     server: 'https://kubernetes.default.svc'
   source:
     path: k8s
@@ -16,3 +16,4 @@ spec:
     automated:
       prune: false
       selfHeal: false
+
